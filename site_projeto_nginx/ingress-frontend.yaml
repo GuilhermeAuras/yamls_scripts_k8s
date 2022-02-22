@@ -4,7 +4,7 @@ metadata:
   name: ingress-frontend
 spec:
   rules:
-  - host: app.blogdobill.com
+  - host: site.rancher.blogdobill.com
     http:
       paths:
       - path: /
