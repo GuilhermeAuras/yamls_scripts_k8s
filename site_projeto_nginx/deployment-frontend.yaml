@@ -4,19 +4,18 @@ metadata:
   name: frontend
   labels:
     app: frontend
-    type: frontend
 spec:
-  template:
-    metadata:
-      name: frontend
-      labels:
-        app: frontend
-        type: frontend
-    spec:
-      containers:
-        - name: frontend
-          image: nginx
+  replicas: 3
   selector:
     matchLabels:
-      type: frontend
-  replicas: 2
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
