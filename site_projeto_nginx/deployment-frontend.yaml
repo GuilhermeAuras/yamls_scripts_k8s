@@ -17,6 +17,6 @@ spec:
       containers:
       - name: nginx
         imagePullPolicy: Never
-        image: debian
+        image: wordpress
         ports:
         - containerPort: 80
