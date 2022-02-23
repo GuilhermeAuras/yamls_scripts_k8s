@@ -1,1 +1,1 @@
-kubectl apply -f ./
+kubectl apply -f site_projeto_nginx/
