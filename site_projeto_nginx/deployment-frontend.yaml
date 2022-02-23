@@ -17,6 +17,6 @@ spec:
       containers:
       - name: nginx
         imagePullPolicy: Never
-        image: nginx
+        image: php
         ports:
         - containerPort: 80
