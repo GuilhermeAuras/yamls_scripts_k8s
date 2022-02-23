@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        imagePullPolicy: Never
-        image: wordpress:5.4.2-php7.2-apache
+#        imagePullPolicy: Never
+        image: nginx
         ports:
         - containerPort: 80
