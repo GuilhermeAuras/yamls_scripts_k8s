@@ -18,6 +18,6 @@ spec:
       - name: nginx
         imagePullPolicy: Never
         image: nginx
-        command: ['sh', '-c', 'echo "Bill pagina" > /var/www/example.com/index.html']
+        command: ['sh', '-c', 'echo "Bill pagina"']
         ports:
         - containerPort: 80
