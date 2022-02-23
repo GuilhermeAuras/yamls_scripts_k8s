@@ -18,7 +18,5 @@ spec:
       - name: nginx
         imagePullPolicy: Never
         image: nginx
-        volumeMounts:
-          mountPath: /usr/share/nginx/html
         ports:
         - containerPort: 80
