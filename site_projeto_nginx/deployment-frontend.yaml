@@ -17,6 +17,7 @@ spec:
       containers:
       - name: nginx
         imagePullPolicy: Never
-        image: wordpress
+        image: nginx
+        command: ['sh', '-c', 'echo "Bill pagina" > /var/www/example.com/index.html']
         ports:
         - containerPort: 80
