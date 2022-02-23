@@ -18,6 +18,5 @@ spec:
       - name: nginx
         imagePullPolicy: Never
         image: nginx
-        command: ['sh', '-c', 'echo "Bill pagina"']
         ports:
         - containerPort: 80
