@@ -5,7 +5,7 @@ metadata:
   labels:
     app: frontend
 spec:
-  replicas: 50
+  replicas: 30
   selector:
     matchLabels:
       app: frontend
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        imagePullPolicy: Never
+#        imagePullPolicy: Never
         image: nginx
         ports:
         - containerPort: 80
