@@ -16,8 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-#        imagePullPolicy: Always
-#        image: registry.blogdobill.com:5000/nginx_of_bill:latest
         image: nginx
         ports:
         - containerPort: 80
